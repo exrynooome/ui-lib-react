@@ -1,0 +1,37 @@
+@import "theme";
+
+:root {
+    @include light-theme;
+}
+
+html:not(._light) {
+    @media (prefers-color-scheme: dark) {
+        @include dark-theme;
+    }
+}
+
+html._dark {
+    @include dark-theme;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--TX);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@import "text";

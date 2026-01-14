@@ -1,0 +1,61 @@
+@mixin light-theme {
+  /* backgrounds */
+
+  --BG_0: #FFFFFF;
+  --BG_1: #F2F2F7;
+  --BG_2: #FFFFFF;
+  --BG_3: #ffffff;
+
+  /* colors */
+
+  --RED: #FF383C;
+  --YELLOW: #FFCC00;
+  --GREEN: #34C759;
+  --BLUE: #0088FF;
+
+  /* text */
+
+  --TX: #000000;
+
+  /* grays */
+
+  --GR_0: #8E8E93;
+  --GR_1: #AEAEB2;
+  --GR_2: #C7C7CC;
+  --GR_3: #D1D1D6;
+  --GR_4: #E5E5EA;
+  --GR_5: #F2F2F7;
+  --WH: #FFFFFF;
+  --BLK: #000000;
+}
+
+@mixin dark-theme {
+  /* backgrounds */
+
+  --BG_0: #000000;
+  --BG_1: #0B0B0C;
+  --BG_2: #121214;
+  --BG_3: #242428;
+
+  /* colors */
+
+  --RED: #FF383C;
+  --YELLOW: #FFCC00;
+  --GREEN: #34C759;
+  --BLUE: #0088FF;
+
+  /* text */
+
+  --TX: #FFFFFF;
+
+  /* grays */
+
+  --GR_0: #8E8E93;
+  --GR_1: #AEAEB2;
+  --GR_2: #C7C7CC;
+  --GR_3: #D1D1D6;
+  --GR_4: #E5E5EA;
+  --GR_5: #F2F2F7;
+  --WH: #FFFFFF;
+  --BLK: #000000;
+}

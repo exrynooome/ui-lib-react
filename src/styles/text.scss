@@ -1,0 +1,87 @@
+h1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* text */
+
+.text_14 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.text_14_medium {
+  @extend .text_14;
+  font-weight: 500;
+}
+
+.text_14_sbold {
+  @extend .text_14;
+  font-weight: 600;
+}
+
+
+
+.text_16 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.text_16_medium {
+  @extend .text_16;
+  font-weight: 500;
+}
+
+.text_16_sbold {
+  @extend .text_16;
+  font-weight: 600;
+}
+
+
+
+.text_18 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.text_18_medium {
+  @extend .text_18;
+  font-weight: 500;
+}
+
+.text_18_sbold {
+  @extend .text_18;
+  font-weight: 600;
+}
+
+/* buttons */
+
+.button_14 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.button_15 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.button_18 {
+  font-size: 18px;
+  font-weight: 600;
+}
