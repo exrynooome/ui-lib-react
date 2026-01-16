@@ -1,0 +1,268 @@
+.button {
+  display: inline-block;
+  transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
+
+  & > * {
+    pointer-events: none;
+    color: inherit;
+  }
+
+  svg {
+    background-color: transparent;
+    fill: var(--WH);
+  }
+
+  &._icons {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+/* Sizes */
+.button_14 {
+  padding: 12px 20px;
+  border-radius: 4px;
+
+  svg {
+    width: 14px;
+    height: 14px;
+    &:first-child {
+      margin-left: 20px;
+    }
+  }
+}
+
+.button_15 {
+  padding: 14px 24px;
+  border-radius: 5px;
+
+  svg {
+    width: 15px;
+    height: 15px;
+    &:first-child {
+      margin-left: 24px;
+    }
+  }
+}
+
+.button_18 {
+  padding: 16px 36px;
+  border-radius: 6px;
+
+  svg {
+    width: 18px;
+    height: 18px;
+    &:first-child {
+      margin-left: 36px;
+    }
+  }
+}
+
+.button_main {
+  color: var(--WH);
+
+  /* colors */
+
+  &.red {
+    background-color: var(--RED);
+    &:hover {
+      background-color: var(--HRED);
+    }
+    &:active {
+      background-color: var(--HRED);
+    }
+  }
+
+  &.blue {
+    background-color: var(--BLUE);
+    &:hover {
+      background-color: var(--HBLUE);
+    }
+    &:active {
+      background-color: var(--HBLUE);
+    }
+  }
+
+  &.yellow {
+    background-color: var(--YELLOW);
+    &:hover {
+      background-color: var(--HYELLOW);
+    }
+    &:active {
+      background-color: var(--HYELLOW);
+    }
+  }
+
+  &.green {
+    background-color: var(--GREEN);
+    &:hover {
+      background-color: var(--HGREEN);
+    }
+    &:active {
+      background-color: var(--HGREEN);
+    }
+  }
+
+  &:disabled, &._disabled {
+    background-color: transparent;
+    cursor: default;
+    color: var(--GR_4);
+    box-shadow: 0 0 0 2px var(--GR_2) inset;
+
+    svg path {
+      fill: var(--GR_4);
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: var(--GR_4);
+    }
+  }
+
+}
+
+.button_text {
+  padding: 0;
+  background-color: transparent;
+  text-decoration: none;
+  svg {
+    &:first-child {
+      margin-left: 8px;
+    }
+    &:last-child {
+      margin-right: 8px;
+    }
+  }
+
+  &:hover {
+    text-decoration: underline;
+    background-color: transparent;
+  }
+
+  /* colors */
+
+  &.red {
+    color: var(--RED);
+    svg {
+      path {
+        fill: var(--RED);
+      }
+    }
+    &:hover {
+      color: var(--HRED);
+      svg {
+        path {
+          fill: var(--HRED);
+        }
+      }
+    }
+    &:active {
+      color: var(--HRED);
+      svg {
+        path {
+          fill: var(--HRED);
+        }
+      }
+    }
+  }
+
+  &.blue {
+    color: var(--BLUE);
+    svg {
+      path {
+        fill: var(--BLUE);
+      }
+    }
+    &:hover {
+      color: var(--HBLUE);
+      svg {
+        path {
+          fill: var(--HBLUE);
+        }
+      }
+    }
+    &:active {
+      color: var(--HBLUE);
+      svg {
+        path {
+          fill: var(--HBLUE);
+        }
+      }
+    }
+  }
+
+  &.yellow {
+    color: var(--YELLOW);
+    svg {
+      path {
+        fill: var(--YELLOW);
+      }
+    }
+    &:hover {
+      color: var(--HYELLOW);
+      svg {
+        path {
+          fill: var(--HYELLOW);
+        }
+      }
+    }
+    &:active {
+      color: var(--HYELLOW);
+      svg {
+        path {
+          fill: var(--HYELLOW);
+        }
+      }
+    }
+  }
+
+  &.green {
+    color: var(--GREEN);
+    svg {
+      path {
+        fill: var(--GREEN);
+      }
+    }
+    &:hover {
+      color: var(--HGREEN);
+      svg {
+        path {
+          fill: var(--HGREEN);
+        }
+      }
+    }
+    &:active {
+      color: var(--HGREEN);
+      svg {
+        path {
+          fill: var(--HGREEN);
+        }
+      }
+    }
+  }
+
+  /* sizes */
+
+  &.button_14 {
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &.button_15 {
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &.button_18 {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+
