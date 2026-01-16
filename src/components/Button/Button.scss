@@ -103,6 +103,16 @@
     }
   }
 
+  &.gray {
+    background-color: var(--GR_4);
+    &:hover {
+      background-color: var(--GR_3);
+    }
+    &:active {
+      background-color: var(--GR_3);
+    }
+  }
+
   &:disabled, &._disabled {
     background-color: transparent;
     cursor: default;
@@ -240,6 +250,32 @@
       }
     }
   }
+
+  &.gray {
+    color: var(--GR_4);
+    svg {
+      path {
+        fill: var(--GR_4);
+      }
+    }
+    &:hover {
+      color: var(--GR_3);
+      svg {
+        path {
+          fill: var(--GR_3);
+        }
+      }
+    }
+    &:active {
+      color: var(--GR_3);
+      svg {
+        path {
+          fill: var(--GR_3);
+        }
+      }
+    }
+  }
+
 
   /* sizes */
 

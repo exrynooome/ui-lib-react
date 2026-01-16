@@ -17,6 +17,7 @@ export enum ButtonColor {
     BLUE = "blue",
     GREEN = "green",
     YELLOW = "yellow",
+    GRAY = "gray",
 }
 
 type Props = React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement> & {
