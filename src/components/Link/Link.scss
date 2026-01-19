@@ -1,7 +1,6 @@
-.button {
+.link {
   display: inline-block;
   transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
-  color: var(--WH);
 
   & > * {
     pointer-events: none;
@@ -18,121 +17,6 @@
     align-items: center;
   }
 
-  /* colors */
-
-  &.red {
-    background-color: var(--RED);
-    &:hover {
-      background-color: var(--HRED);
-    }
-    &:active {
-      background-color: var(--HRED);
-    }
-  }
-
-  &.blue {
-    background-color: var(--BLUE);
-    &:hover {
-      background-color: var(--HBLUE);
-    }
-    &:active {
-      background-color: var(--HBLUE);
-    }
-  }
-
-  &.yellow {
-    background-color: var(--YELLOW);
-    &:hover {
-      background-color: var(--HYELLOW);
-    }
-    &:active {
-      background-color: var(--HYELLOW);
-    }
-  }
-
-  &.green {
-    background-color: var(--GREEN);
-    &:hover {
-      background-color: var(--HGREEN);
-    }
-    &:active {
-      background-color: var(--HGREEN);
-    }
-  }
-
-  &.gray {
-    background-color: var(--GR_4);
-    &:hover {
-      background-color: var(--GR_3);
-    }
-    &:active {
-      background-color: var(--GR_3);
-    }
-  }
-
-  &:disabled, &._disabled {
-    background-color: transparent;
-    cursor: default;
-    color: var(--GR_4);
-    box-shadow: 0 0 0 2px var(--GR_2) inset;
-
-    svg path {
-      fill: var(--GR_4);
-    }
-
-    &:hover {
-      background-color: transparent;
-      color: var(--GR_4);
-    }
-
-    &:active {
-      background-color: transparent;
-    }
-  }
-
-}
-
-/* Sizes */
-.button_14 {
-  padding: 12px 20px;
-  border-radius: 4px;
-
-  svg {
-    width: 14px;
-    height: 14px;
-    &:first-child {
-      margin-left: 20px;
-    }
-  }
-}
-
-.button_15 {
-  padding: 14px 24px;
-  border-radius: 5px;
-
-  svg {
-    width: 15px;
-    height: 15px;
-    &:first-child {
-      margin-left: 24px;
-    }
-  }
-}
-
-.button_18 {
-  padding: 16px 36px;
-  border-radius: 6px;
-
-  svg {
-    width: 18px;
-    height: 18px;
-    &:first-child {
-      margin-left: 36px;
-    }
-  }
-}
-
-.button_text {
   padding: 0;
   background-color: transparent;
   text-decoration: none;
@@ -301,5 +185,3 @@
     }
   }
 }
-
-

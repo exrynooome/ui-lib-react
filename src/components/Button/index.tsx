@@ -1,11 +1,6 @@
 import React from "react";
 import "./Button.scss";
 
-export enum ButtonStyle {
-    MAIN = "button_main",
-    TEXT = "button_text",
-}
-
 export enum ButtonSize {
     SMALL = "button_14",
     NORMAL = 'button_15',
@@ -21,7 +16,6 @@ export enum ButtonColor {
 }
 
 type Props = React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement> & {
-    style: ButtonStyle;
     size?: ButtonSize;
     disabled?: boolean;
     icons?: React.ReactNode;
@@ -29,7 +23,6 @@ type Props = React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElemen
 }
 
 const Button: React.FC<Props> = ({
-                                     style,
                                      size = ButtonSize.NORMAL,
                                      className,
                                      onClick,
@@ -42,7 +35,7 @@ const Button: React.FC<Props> = ({
                                  }) => (
     (
         <a
-            className={`button${icons ? ` _icons` : ""} ${color} ${style} ${size}${
+            className={`button${icons ? ` _icons` : ""} ${color} ${size}${
                 className ? ` ${className}` : ""
             }${disabled ? ` _disabled` : ""}`}
             onClick={!disabled ? onClick : undefined}
