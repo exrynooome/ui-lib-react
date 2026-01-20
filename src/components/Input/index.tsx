@@ -5,6 +5,7 @@ export enum InputColor {
     BLUE = "blue",
     GREEN = "green",
     YELLOW = "yellow",
+    MONO = "mono",
 }
 
 export enum InputVariant {
@@ -95,7 +96,7 @@ const Input: React.FC<Props> = ({
                 </label>
             )}
 
-            <div className={`input-container ${isFocused ? 'focused' : ''}${variant} ${displayError ? error : ''}`}>
+            <div className={`input-container${isFocused ? ' focused' : ''} ${displayError ? error : ''}`}>
                 {leftIcon && <span className={"input-icon left"}>{leftIcon}</span>}
 
                 <input
@@ -105,7 +106,7 @@ const Input: React.FC<Props> = ({
                     onBlur={handleBlur}
                     onFocus={() => setIsFocused(true)}
                     maxLength={maxLength}
-                    className={`input-field ${leftIcon ? 'left' : ''} ${displayError ? 'error' : ''} ${color}`}
+                    className={`input-field${leftIcon ? ' left' : ''} ${variant} ${displayError ? 'error' : ''} ${color}`}
                     {...restProps}
                 />
 

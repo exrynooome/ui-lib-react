@@ -25,9 +25,20 @@
   box-shadow: inset 0 0 0 1px var(--GR_2);
   padding: 12px 10px;
 
+  &.filled {
+    background-color: var(--GR_0);
+
+    &:focus {
+      background-color: var(--GR_1);
+    }
+
+    &::placeholder {
+      color: var(--GR_5);
+    }
+  }
+
   &::placeholder {
     color: var(--GR_4);
-    opacity: 1;
   }
 
   &:hover {
@@ -46,6 +57,10 @@
 
     &.green {
       box-shadow: inset 0 0 0 1px var(--GREEN);
+    }
+
+    &.mono {
+      box-shadow: inset 0 0 0 1px var(--TX);
     }
   }
 
