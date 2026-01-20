@@ -1,0 +1,137 @@
+.input {
+  width: 100%;
+  color: var(--TX);
+}
+
+.required {
+  margin-left: 8px;
+  color: var(--RED);
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.input-field {
+  width: 100%;
+  outline: none;
+  color: var(--TX);
+  border: none;
+  border-radius: 5px;
+  transition: color ease-in-out .15s, box-shadow ease-in-out .15s;
+  box-shadow: inset 0 0 0 1px var(--GR_2);
+  padding: 12px 10px;
+
+  &.filled {
+    background-color: var(--GR_0);
+
+    &:focus {
+      background-color: var(--GR_1);
+    }
+
+    &::placeholder {
+      color: var(--GR_5);
+    }
+  }
+
+  &::placeholder {
+    color: var(--GR_4);
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px var(--GR_4);
+  }
+
+  &:focus {
+
+    &.blue {
+      box-shadow: inset 0 0 0 1px var(--BLUE);
+    }
+
+    &.yellow {
+      box-shadow: inset 0 0 0 1px var(--YELLOW);
+    }
+
+    &.green {
+      box-shadow: inset 0 0 0 1px var(--GREEN);
+    }
+
+    &.mono {
+      box-shadow: inset 0 0 0 1px var(--TX);
+    }
+  }
+
+  &.error {
+    box-shadow: inset 0 0 0 1px var(--RED);
+  }
+
+  &.error:focus {
+    box-shadow: inset 0 0 0 1px var(--RED);
+  }
+
+  &.left {
+    padding-left: 44px;
+  }
+}
+
+.clear-button {
+  position: absolute;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: none;
+  background-color: var(--GR_2);
+  transition: background-color ease .15s;
+  animation:  slideIn 0.2s forwards;
+
+  &:hover {
+    background-color: var(--GR_3);
+  }
+
+  svg {
+    background-color: transparent;
+    path {
+      fill: var(--BG_0);
+    }
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-12px);
+  }
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  pointer-events: none;
+  width: 24px;
+  height: 24px;
+}
+
+.input-footer {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.error-message {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--RED);
+}
+
+.helper-text, .char-count {
+  color: var(--GR_5);
+}
+
